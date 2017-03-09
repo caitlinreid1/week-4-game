@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Calculator</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="composer.json"></script>
+
+</head>
+<body>
+  <div class="container">
+	<div class="panel panel-default">
+  		<div class="panel-heading"><h2>CrystalsCollector!</h2></div>
+  		<div class="panel-body">
+  			<h3>Instructions</h3>
+  			<ol>
+  			<li>You will be give a random number at the start of the game.</li>
+  			<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+  			<li>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
+  			<li>The value of each crystal is hidden from you until you click on it</li>
+  			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+  		</div>
+		  	<div class="panel panel-default">
+		  		<div class="panel-body">
+		  			<div class="row">
+  						<div class="col-sm-4 randomNumber">A</div>
+  						<div class="col-sm-4">
+  							<p id="wins"></p>
+  							<p id="losses"></p>
+
+  						</div>
+
+ 	 					<div class="col-sm-4">
+ 	 						<p>Your Total Score:</p>
+ 	 						<p id="totalScore"></p>
+ 	 					</div>
+					</div>
+
+		  		</div>
+
+			</div>
+			<img src="assets/images/turq.jpg" id="turq"> 
+			<img src="assets/images/red.jpg" id="red"> 
+			<img src="assets/images/green.jpg" id="green"> 
+			<img src="assets/images/yellow.jpg" id="yellow">
+	</div>
+
+  </div>
+</body>
+</html>
