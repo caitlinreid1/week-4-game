@@ -9,8 +9,10 @@
 
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- link google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="composer.json"></script>
 
 </head>
@@ -18,27 +20,30 @@
   <div class="container">
 	<div class="panel panel-default">
   		<div class="panel-heading"><h2>CrystalsCollector!</h2></div>
-  		<div class="panel-body">
+  		<div class="panel-body col-sm-10">
   			<h3>Instructions</h3>
-  			<ol>
-  			<li>You will be give a random number at the start of the game.</li>
-  			<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
-  			<li>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
-  			<li>The value of each crystal is hidden from you until you click on it</li>
-  			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+  			  <ol> 
+	  			<li>You will be give a random number at the start of the game.</li>
+	  			<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+	  			<li>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
+	  			<li>The value of each crystal is hidden from you until you click on it</li>
+	  			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+  		     </ol>
   		</div>
 		  	<div class="panel panel-default">
 		  		<div class="panel-body">
 		  			<div class="row">
-  						<div class="col-sm-4 randomNumber">A</div>
+  						<div class="col-sm-4 randomNumber">
+  							<h4>Number to Match:</h4>
+  						</div>
   						<div class="col-sm-4">
-  							<p id="wins"></p>
-  							<p id="losses"></p>
+  							<p id="wins"><h5>Wins:</h5></p>
+  							<p id="losses"><h5>Losses:</h5></p>
 
   						</div>
 
  	 					<div class="col-sm-4">
- 	 						<p>Your Total Score:</p>
+ 	 						<h4>Your Total Score:</h4>
  	 						<p id="totalScore"></p>
  	 					</div>
 					</div>
