@@ -24,25 +24,42 @@ var totalScore = 0;
 $('#totalScore').html(totalScore);
 
 // create random numerical value for each crystal 
-var turqValue = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-	console.log(turqValue);
-var redValue = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-var greenValue = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-var yellowValue = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+var turq = {
+	'value' : (Math.floor(Math.random() * (12 - 1 + 1)) + 1)	
+}
+
+var red = {
+	'value' : (Math.floor(Math.random() * (12 - 1 + 1)) + 1)
+}
+
+var green = {
+	'value' : (Math.floor(Math.random() * (12 - 1 + 1)) + 1)
+}
+
+var yellow = {
+	'value' : (Math.floor(Math.random() * (12 - 1 + 1)) + 1)
+}
+
+
+for (var i = 0; i < 120; i++) {
+	// For each iteration, we will create an imageCrystal
+    var imageCrystal = $("<img>");
+
+	// Each imageCrystal will be given a data attribute called data-crystalValue.
+
+	// This data attribute will be set equal to the array value.
+	imageCrystal.attr("data-crystalvalue", turqValue[i]);
+
+	// Lastly, each crystal image (with all it classes and attributes) will get added to the page.
+	$("#crystals").append(imageCrystal);
+}
+
+
 
 // When user clicks on a image-button, it will add the corresponding numerical value to "total score" at A)
 
 $('#turq').on("click", function (){
-	var updateCounter = "";
 
-
-	console.log(turqValue);
-	// var i;
-	// var x = $(turqValue).toArray(totalScore);
-
-	// for (i = 0; i < x.length; i++) {
-	// 	$('#totalScore').html(totalScore);
-	// }
 
 
 });
@@ -50,21 +67,18 @@ $('#turq').on("click", function (){
 
 $('#red').on("click", function(){
 	
-	totalScore.push(redValue);
 
-	console.log(redValue);
+
 
 });
 
 $('#green').on("click", function(){
-	
-	console.log(greenValue);	
+		
 
 });
 
 $('#yellow').on("click", function(){
 	
-	console.log(yellowValue);
 
 });
 
@@ -72,17 +86,17 @@ $('#yellow').on("click", function(){
 // Update the total score counter 
 //print to document
 
-	//if player's total score C) === A) player wins | update wins++ counter
-	if (counter === targetNumber) {
-      alert("You win!");
-      wins++
-    }
+	// //if player's total score C) === A) player wins | update wins++ counter
+	// if (counter === targetNumber) {
+ //      alert("You win!");
+ //      wins++
+ //    }
     
-	// if player's total score C) > A) player loses
-	else if (counter >= targetNumber) {
-      alert("You lose!!");
-      losses++
-    }
+	// // if player's total score C) > A) player loses
+	// else if (counter >= targetNumber) {
+ //      alert("You lose!!");
+ //      losses++
+ //    }
 
 
 
