@@ -2,24 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jQuery Calculator</title>
+    <title>Crystal Collector</title>
 
     <!-- Added link to the jQuery Library -->
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- link google font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="text/javascript" src="composer.json"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 <body>
   <div class="container">
 	<div class="panel panel-default">
-  		<div class="panel-heading"><h2>CrystalsCollector!</h2></div>
+  		<div class="panel-heading"><h2>Crystals Collector!</h2></div>
   		<div class="panel-body col-sm-10">
   			<h3>Instructions</h3>
   			  <ol> 
@@ -33,18 +31,18 @@
 		  	<div class="panel panel-default">
 		  		<div class="panel-body">
 		  			<div class="row">
-  						<div class="col-sm-4 randomNumber">
-  							<h4>Number to Match:</h4>
+  						<div class="col-sm-4">
+  							<p id="random">
+  							</p>
   						</div>
   						<div class="col-sm-4">
-  							<p id="wins"><h5>Wins:</h5></p>
-  							<p id="losses"><h5>Losses:</h5></p>
-
+  							<p id="wins"></p>
+  							<p id="losses"></p>
   						</div>
 
  	 					<div class="col-sm-4">
- 	 						<h4>Your Total Score:</h4>
- 	 						<p id="totalScore"></p>
+ 	 						<p>Total Score:</p>
+ 	 						<p id="score"></p>
  	 					</div>
 					</div>
 
@@ -58,5 +56,7 @@
 	</div>
 
   </div>
+
+  
 </body>
 </html>
